@@ -1,10 +1,12 @@
 import React from 'react'
+import Cycle from './App';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-const App = () => (
+const Router = () => (
   <BrowserRouter>
     <div>
       <ul>
+        <li><Link to='/cycle'>Cycle</Link></li>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/friends'>Friends</Link></li>
@@ -14,6 +16,7 @@ const App = () => (
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
       <Route path='/friends' component={Friends} />
+      <Route path='/cycle' component={Cycle} />
     </div>
   </BrowserRouter>
 )
@@ -102,4 +105,4 @@ const FRIENDS = [
 const friendById = id => FRIENDS.find(friend => friend.id === id)
 
 
-export default App
+export default Router
