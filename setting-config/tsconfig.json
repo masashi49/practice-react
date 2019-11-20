@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false, /* any型で式と宣言のエラー。 */
+    "strictNullChecks": true, /* 厳密なヌルチェックtrue。 */
+    "removeComments": true, /* コメントを出力なし。 */
+    "preserveConstEnums": true,
+    "sourceMap": true, /*'.map'ファイル生成*/
+    "allowSyntheticDefaultImports": true,/* デフォルトのエクスポートがないモジュールからのデフォルトのインポートを許可します。これはコードの出力には影響しません。型検査だけです。 */
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true, /* jsファイルをコンパイルtrue */
+    "esModuleInterop": true, /*CommonJSモジュールとESモジュール間の相互運用性を,すべてのインポート用に名前空間オブジェクトを作成する事で可能にする*/
+    "jsx": "react" /* JSXコード生成を指定する */
+  },
+  "exclude": [
+    "node_modules",
+    "webpack.config.js",
+    "dist"
+  ]
+}
